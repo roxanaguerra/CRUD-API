@@ -21,3 +21,14 @@ $router->get('/', function () use ($router) {
 $router->get('hola', function () use ($router) {
     return "Hola mundo";
 });
+
+$router->get('/libros', 'LibroController@index');
+
+// CRUD - APIs
+$router->post('/libros', 'LibroController@guardar');
+
+$router->get('/libros/{id}', 'LibroController@ver');
+
+$router->post('/libros/{id}', 'LibroController@actualizar');
+
+$router->delete('/libros/{id}', 'LibroController@eliminar');

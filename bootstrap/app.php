@@ -25,7 +25,8 @@ $app = new Laravel\Lumen\Application(
 
 // $app->withFacades();
 
-// $app->withEloquent();
+// ORM - PARA INTERACTUAR CON LA DB. (TRAER INFORMACION DE DB)
+$app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
